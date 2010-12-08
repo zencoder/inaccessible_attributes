@@ -20,7 +20,7 @@ module EricChapweske
         if accessible_attributes.blank?
           inheritable_attributes.delete(:attr_accessible)
         else
-          raise "attr_accessible already defined for #{ accessible_attributes.join(', ') }. Can't disable"
+          raise "attr_accessible already defined for #{ accessible_attributes.to_a.to_sentence }. Can't disable"
         end
       end
 
