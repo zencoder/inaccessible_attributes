@@ -23,3 +23,5 @@ In your own classes, the plugin must be disabled before the offending code is mi
     end
 
 Copyright (c) 2008 Eric Chapweske, released under the MIT license
+
+Updated by Zencoder for use with Rails 2.3
