@@ -17,7 +17,7 @@ module EricChapweske
       end
 
       def disable_attr_inaccessible
-        if accessible_attributes.blank?
+        if accessible_attributes.to_a.blank?
           inheritable_attributes.delete(:attr_accessible)
         else
           raise "attr_accessible already defined for #{ accessible_attributes.to_a.to_sentence }. Can't disable"
